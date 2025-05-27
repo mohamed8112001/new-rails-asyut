@@ -1,9 +1,4 @@
-# class User < ApplicationRecord
-#     has_many :posts
-# end
-
-
 class User < ApplicationRecord
-    has_many :posts
+    has_many :active_posts , class_name:"Post"
   end
   
